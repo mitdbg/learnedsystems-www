@@ -23,6 +23,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Accessibility, url: "http://accessibility.mit.edu/"}
   - {title: Mail, icon: envelope, url: "mailto:learnedsystems@mit.edu"}
   - {title: GitHub, icon: github, url: "https://github.com/learnedsystems"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/

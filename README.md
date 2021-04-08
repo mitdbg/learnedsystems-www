@@ -12,7 +12,9 @@ bundle exec jekyll serve
 ```
 
 # How to lay out your post with markdown
-[https://jekyllrb.com/docs/posts/](https://jekyllrb.com/docs/posts/)
+[Jekyll docs](https://jekyllrb.com/docs/posts/)
+
+[Some concrete examples](https://github.com/niklasbuschmann/contrast/tree/master/_posts)
 
 # Publish
 Any content pushed to this repository will be automatically published under [https://learnedsystems.mit.edu/](https://learnedsystems.mit.edu/).

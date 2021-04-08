@@ -6,7 +6,7 @@
 git clone git@github.com:mitdbg/learnedsystems-www.git
 cd learnedsystems-www
 cd _posts
-vim YYYY-MM-DD-title.markdown
+vim YYYY-MM-DD-title.md
 cd ..
 bundle exec jekyll serve
 ```

@@ -1,5 +1,5 @@
 # Install dependencies
-[https://jekyllrb.com/docs/installation/#requirements](https://jekyllrb.com/docs/installation/#requirements)
+[Jekyll requirements](https://jekyllrb.com/docs/installation/#requirements)
 
 # Add a new post and test locally
 ```

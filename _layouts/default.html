@@ -27,9 +27,32 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
+<style>
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
+  <div class="row">
+    <div class="column">
+      <img src="/assets/csail-logo.png" alt="CSAIL Logo" style="width:100px">
+    </div>
+    <div class="column">
+      <img src="/assets/dsail-logo.png" alt="DSAIL Logo" style="width:150px">
+    </div>
+  </div>
 </header>
 
 {{ content }}

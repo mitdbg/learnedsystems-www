@@ -1,6 +1,6 @@
-title: "Learned Systems at MIT"
+title: "Learned Systems"
 author: "MIT DSG"
-description: "Latest research on learned systems by MIT DSG."
+description: "A blog about research on learned systems."
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"

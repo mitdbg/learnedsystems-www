@@ -21,6 +21,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Accessibility, url: "http://accessibility.mit.edu/"}
+  - {title: Subscribe, url: "https://forms.gle/YVYXRi729aJPA3tg8"}
   - {title: Mail, icon: envelope, url: "mailto:learnedsystems@mit.edu"}
   - {title: GitHub, icon: github, url: "https://github.com/learnedsystems"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}

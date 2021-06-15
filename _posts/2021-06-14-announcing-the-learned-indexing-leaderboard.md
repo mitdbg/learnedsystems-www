@@ -16,8 +16,8 @@ Since the initial release of SOSD, we've made a few additions to the framework:
 
 While SOSD certainly filled the gap of a standardized benchmark, we feel that due to the sheer number of papers in this area, there's still a lot of discrepancies among experimental evaluations. This is mainly due to the fact that many implementations need to be tuned for the datasets and hardware at hand.
 
-Today, we're happy to announce the Learned Indexing Leaderboard, an ongoing indexing benchmark on various synthetic and real-world datasets and is based on [SOSD](https://github.com/learnedsystems/SOSD). For each dataset, there are different size categories (e.g., M stands for an index size of up to 1% of the dataset size). We'll be using the **m5zn.metal** AWS instance type for the competition to ensure a common playing field.
+Today, we're happy to announce the Learned Indexing Leaderboard, an ongoing indexing benchmark on various synthetic and real-world datasets based on [SOSD](https://github.com/learnedsystems/SOSD). For each dataset, there are different size categories (e.g., M stands for an index size of up to 1% of the dataset size). We'll be using the **m5zn.metal** AWS instance type for the leaderboard to ensure a common playing field.
 
-We hope that our benchmark will receive contributions from the community (index implementations, datasets, and workloads) and can serve as a common benchmarking testbed. We'll post the link here in the next few days. Here's a first glance:
+We hope that our benchmark will receive contributions from the community (index implementations, datasets, and workloads) and can serve as a common benchmarking testbed. We'll post the link to the leaderboard here in the next few days. Here's a first glance:
 
 ![SOSD Leaderboard](/assets/sosd/screenshot.png)

@@ -18,6 +18,6 @@ While SOSD certainly filled the gap of a standardized benchmark, we feel that du
 
 Hence, we're happy to announce the Learned Indexing Game (LIG). LIG is an ongoing indexing benchmark on various synthetic and real-world datasets and is based on [SOSD](https://github.com/learnedsystems/SOSD). For each dataset, there are different size categories (e.g., M stands for an index size of up to 1% of the dataset size). We'll be using the **m5zn.metal** AWS instance type for the competition to ensure a common playing field.
 
-We hope that LIG will receive contributions from the community (index implementations, datasets, and workloads) and can serve as a common benchmarking testbed. We'll post the link to the game here in the next few days. Here's a first glance:
+We hope that LIG will receive contributions from the community (index implementations, datasets, and workloads) and can serve as a common benchmarking testbed. We'll post the link here in the next few days. Here's a first glance:
 
-![SOSD Leaderboard](/assets/sosd/leaderboard.png)
+![LIG Screenshot](/assets/lig/screenshot.png)

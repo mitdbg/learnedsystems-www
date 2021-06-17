@@ -2,6 +2,7 @@
 layout: post
 title: "More Bao Results: Learned Distributed Query Optimization on Vertica, Redshift, and Azure Synapse"
 ---
+
 *Author: [Ryan Marcus](https://rmarcus.info)*
 
 Next week, we'll present our new system for learned query optimization, [Bao](https://rm.cab/bao), [SIGMOD21](https://2021.sigmod.org/), where we are thrilled to receive a [best paper award](https://2021.sigmod.org/sigmod_best_papers.shtml).

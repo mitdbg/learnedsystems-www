@@ -5,18 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
-<!--Insert OG Markup -->
-<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="The Title of Your Page" />
-<meta prefix="og: http://ogp.me/ns#" property="og:description" content="The description of your page." />
-<meta prefix="og: http://ogp.me/ns#" property="og:image" content="The image url" />
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="The url of your web page" />
-<!--Insert Twitter Card Markup -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@YourTwitterUsername" />
-<meta name="twitter:domain" content="The url of your web page" />
-<meta name="twitter:title" content="The Title of Your Page" />
-<meta name="twitter:description" content="The description of your page." />
 {% seo %}
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% if site.show_frame %}

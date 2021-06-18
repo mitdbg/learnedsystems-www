@@ -2,7 +2,7 @@
 layout: post
 title: "More Bao Results: Learned Distributed Query Optimization on Vertica, Redshift, and Azure Synapse"
 image:
-  path: /assets/bao/bao\_blog\_diag.svg
+  path: /assets/dsail-logo.png
   height: 100
   width: 100
 ---

@@ -1,5 +1,3 @@
-<meta prefix="og: http://ogp.me/ns#" property="og:image" content="/assets/bao/bao_blog_diag.svg" />
-
 ---
 layout: post
 title: "More Bao Results: Learned Distributed Query Optimization on Vertica, Redshift, and Azure Synapse"

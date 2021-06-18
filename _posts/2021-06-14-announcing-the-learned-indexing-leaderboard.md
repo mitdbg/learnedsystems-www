@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Announcing the Learned Indexing Leaderboard"
+image:  "/assets/sosd/screenshot.png"
 ---
 
 *Authors: Allen Huang, [Andreas Kipf](https://people.csail.mit.edu/kipf/), [Ryan Marcus](https://rmarcus.info/blog/), and [Tim Kraska](https://people.csail.mit.edu/kraska/)*

@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "More Bao Results: Learned Distributed Query Optimization on Vertica, Redshift, and Azure Synapse"
-image: /assets/bao/bao_blog_diag.svg
+image:
+  path: /assets/bao/bao_blog_diag.svg
+  height: 100
+  width: 100
 ---
 
 *Author: [Ryan Marcus](https://rmarcus.info)*

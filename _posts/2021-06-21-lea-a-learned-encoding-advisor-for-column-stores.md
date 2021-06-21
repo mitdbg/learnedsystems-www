@@ -3,11 +3,11 @@ layout: post
 title: "LEA: A Learned Encoding Advisor for Column Stores"
 ---
 
-*Authors: Lujing Cen, [Andreas Kipf](https://people.csail.mit.edu/kipf/), [Ryan Marcus](https://rmarcus.info/blog/), and [Tim Kraska](https://people.csail.mit.edu/kraska/)*
+*Authors: Lujing Cen, [Andreas Kipf](https://people.csail.mit.edu/kipf/)*
 
-This blog post presents LEA, our new learned encoding advisor for column stores. LEA helps the database choose the best encoding for each column. At the moment, it can optimize for compressed size or query speed. On TPC-H, LEA achieves 19% lower query latency while using 26% less space compared to the encoding advisor of a commercial column store.
+We are presenting LEA, our new learned encoding advisor, at [aiDM @ SIGMOD 2021](http://www.aidm-conf.org/). Check out our [presentation](https://youtu.be/9jaJLrAdiPQ) and [paper](https://arxiv.org/pdf/2105.08830.pdf).
 
-For more details about this work, see the [aiDM @ SIGMOD 2021](http://www.aidm-conf.org/) [presentation](https://youtu.be/9jaJLrAdiPQ) and [paper](https://arxiv.org/pdf/2105.08830.pdf)
+In this blog post, we will be going over a high level overview of LEA. LEA helps the database choose the best encoding for each column. At the moment, it can optimize for compressed size or query speed. On TPC-H, LEA achieves 19% lower query latency while using 26% less space compared to the encoding advisor of a commercial column store.
 
 
 ## Motivation
@@ -44,13 +44,13 @@ As an example, we compressed a 1 GiB CSV file using [LZ4](https://en.wikipedia.o
 </table>
 </div>
 
-We see that Gzip achieves a much better compression ratio while LZ4 has a much faster decompression speed. This leads us to the observation that compression schemes inherently represent a tradeoff between compressed size and decompression speed. Lightweight schemes take less time to decompress, but suffer from poor compression ratios. An encoding advisor should incorporate the tradeoffs of different encodings when selecting the best one for each column.
+We see that Gzip achieves a much better compression ratio while LZ4 has a much faster decompression speed. This leads us to the observation that compression schemes inherently represent a tradeoff between I/O operations and CPU operations. The speeds of the underlying storage device and CPU are what determine the overall decompression speed. An encoding advisor should incorporate the tradeoffs of different encodings when selecting the best one for each column.
 
 {:refdef: style="text-align: center;"}
 ![Related](/assets/lea/related.png){: style="max-height: 12em" }
 {: refdef}
 
-There is some work in the area of encoding selection. Existing column advisors usually try to minimize size. They either use heuristics based on column statistics or extract a sample from a column and try all encodings. A project known as [Shrynk](https://vks.ai/2019-12-05-shrynk-using-machine-learning-to-learn-how-to-compress) uses statistics from a Pandas DataFrame to build a classification model which predicts the best compression scheme to use. Concurrent work on [CodecDB](http://people.cs.uchicago.edu/~hajiang/paper/codecdb.pdf) presents a neural network for ranking different encodings based on compressed size. It also has specialized operators which can operate on encoded columns without fully decoding the data.
+There is some work in the area of encoding selection. Existing column advisors usually try to minimize size because they assume that the storage device is much slower than the CPU, which is no longer always true. They either use heuristics based on column statistics or extract a sample from a column and try all encodings. A project known as [Shrynk](https://vks.ai/2019-12-05-shrynk-using-machine-learning-to-learn-how-to-compress) uses statistics from a Pandas DataFrame to build a classification model which predicts the best compression scheme to use. Concurrent work on [CodecDB](http://people.cs.uchicago.edu/~hajiang/paper/codecdb.pdf) presents a neural network for ranking different encodings based on compressed size. It also has specialized operators which can operate on encoded columns without fully decoding the data.
 
 ## Goal
 

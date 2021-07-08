@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Defeating Duplicates: A Re-design of the LearnedSort Algorithm"
+title: "Defeating Duplicates: A Re-Design of the LearnedSort Algorithm"
 ---
 
 *Author: [Ani Kristo](https://anikristo.com)*

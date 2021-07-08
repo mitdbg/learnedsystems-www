@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Defeating duplicates: A re-design of the LearnedSort algorithm"
+title: "Defeating Duplicates: A Re-design of the LearnedSort Algorithm"
 ---
 
 *Author: [Ani Kristo](https://anikristo.com)*
 
 [LearnedSort](https://github.com/learnedsystems/LearnedSort) is a novel sorting algorithm that uses fast ML models to boost the sorting speed. We introduced the algorithm in [SIGMOD 2020](https://dl.acm.org/doi/10.1145/3318464.3389752) together with a large set of benchmarks that showed outstanding performance as compared to state-of-the-art sorting algorithms. 
 
-However, given the nature of the underlying model, its performance was affected on high-duplicate inputs. In this post we introduce [**LearnedSort 2.0**](TODO new paper): a re-design of the algorithm that maintains the leading edge even for high-duplicate inputs. Extensive benchmarks demonstrate that it is on average 4.78× faster than the original LearnedSort for high-duplicate datasets, and 1.60× for low-duplicate datasets.
+However, given the nature of the underlying model, its performance was affected on high-duplicate inputs. In this post we introduce [**LearnedSort 2.0**](https://arxiv.org/abs/2107.03290): a re-design of the algorithm that maintains the leading edge even for high-duplicate inputs. Extensive benchmarks demonstrate that it is on average 4.78× faster than the original LearnedSort for high-duplicate datasets, and 1.60× for low-duplicate datasets.
 
 
 
@@ -95,7 +95,7 @@ Finally, we show the performance of LearnedSort 2.0 in comparison with other sta
 ![step4](/assets/learnedsort/zipf.png){: style="max-width: 36em" }
 {: refdef}
 
-For more in-depth analysis of LearnedSort 2.0, please check out our [Github repo](https://github.com/learnedsystems/LearnedSort) and our [new paper](TODO lsv2 paper), where we give a detailed description of the benchmark setup and show additional experiments on datasets with diverse distributions. We also showed micro-benchmarks to explain its cache efficiency and the improvements from the new design.
+For more in-depth analysis of LearnedSort 2.0, please check out our [Github repo](https://github.com/learnedsystems/LearnedSort) and our [new paper](https://arxiv.org/abs/2107.03290), where we give a detailed description of the benchmark setup and show additional experiments on datasets with diverse distributions. We also showed micro-benchmarks to explain its cache efficiency and the improvements from the new design.
 
 ## Conclusion
 

@@ -117,7 +117,7 @@ the 440ns on `amzn`. Space consumption does not change.
 
 <img src="/assets/lsi/equality.png" style="width:45%;display:block;margin-left:auto;margin-right:auto;" alt="equality benchmark on amzn"/>
 
-### Build time
+### Build Time
 
 We measured the true end-to-end build time for each index given an unsorted
 continuous in-memory representation of each dataset's 200 million keys. LSI is
@@ -143,7 +143,7 @@ which we have no control over, might be unfavorably biased in this case. More
 than half of all elements from `wiki` are duplicates. For this reason, build
 times for RobinMap on this dataset appear faster.
 
-### Fingerprint configuration
+### Fingerprint Configuration
 
 We conducted a micro experiment to study the trade off between binary search
 and linear search with fingerprints. For this purpose, we trained LSI with

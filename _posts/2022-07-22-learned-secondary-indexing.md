@@ -21,6 +21,7 @@ LSI is a learned secondary index. It offers competitive lookup performance on
 real-world datasets while reducing space usage by up to 6x compared to
 state-of-the-art secondary index structures.
 
+
 ### Motivation
 
 Most [learned index

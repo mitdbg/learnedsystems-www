@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Announcing LSI: A Learned Secondary Index Structure"
+title: "LSI: A Learned Secondary Index Structure"
 image: "/assets/lsi/overview.png"
 ---
 

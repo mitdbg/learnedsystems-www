@@ -92,7 +92,7 @@ elements from the datasets before building each index. We only query for
 non-keys.
 LSI with [PLEX](https://arxiv.org/abs/2108.05117) as its approximate index is
 competitive with [ART](https://db.in.tum.de/~leis/papers/ART.pdf)'s latency,
-while only consuming up to 6x less space. It is twice as fast as
+while consuming up to 6x less space. It is twice as fast as
 [BTree](https://github.com/bingmann/stx-btree) while reducing space consumption
 by up to 3x.
 
